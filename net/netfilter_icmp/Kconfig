@@ -1,0 +1,9 @@
+
+#
+# Samples  - configuration
+#
+config NETFILTER_ICMP
+        bool "NETFILTER ICMP"
+        default y
+        ---help---
+        NETFILTER ICMP - This is a test - Sample Code
