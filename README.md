@@ -115,7 +115,7 @@ Help `NETFILTER ICMP`
 
 ![kernel](http://up2www.com/uploads/2b5e2.png "kernel")
 
-Now i bulding my code on the linux kernel you find binary package of build [here](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/tree/master/build) 
+Now we build kernel code on the linux kernel you find binary package of build [here](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/tree/master/build) 
 
 build and install kernel package :
 ```
