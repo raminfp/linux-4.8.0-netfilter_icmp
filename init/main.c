@@ -88,6 +88,11 @@
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 
+#ifdef CONFIG_NETFILTER_ICMP
+#include <net/netfilter_icmp/netfilter_icmp.h>
+#endif
+
+
 static int kernel_init(void *);
 
 extern void init_IRQ(void);
