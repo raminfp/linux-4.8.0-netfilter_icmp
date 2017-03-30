@@ -4,9 +4,10 @@ Questions :
 1) How to work kernel code?
 2) How to write C code on the kernel?
 3) How to building and install the kernel on old version linux?
+4) How to release the linux kernel?
+5) How to fixes bugs on kernel trees?
 
-
-I going to write about all question of the linux kernel and you learning write your own code on linux kernel and build it,
+I going to write sample C kernel code the answer all question of the linux kernel and you learning write your own code on linux kernel and build it,
 
 1- Downloading repo `linux-4.8.0-netfilter_icmp` :
 
