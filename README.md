@@ -16,10 +16,10 @@ root@raminfp /tmp#
 root@raminfp /tmp# git clone https://github.com/raminfp/linux-4.8.0-netfilter_icmp
 ```
 
-2- Source C code [netfilter_icmp](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/tree/master/net/netfilter_icmp) :
+2- We added sample module [netfilter_icmp](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/tree/master/net/netfilter_icmp) in the linux kernel:
 
 ```
-root@raminfp /h/r/D/l/linux-4.8.0# ls
+root@raminfp /tmp/linux-4.8.0# ls
 arch/   COPYING  debian.master/  firmware/  ipc/     lib/         net/            samples/        sound/   usr/
 block/  CREDITS  Documentation/  fs/        Kbuild   MAINTAINERS  README          scripts/        spl/     virt/
 build/  crypto/  drivers/        include/   Kconfig  Makefile     README.md       security/       tools/   zfs/
@@ -31,11 +31,12 @@ Kconfig  Makefile  netfilter_icmp.c
 root@raminfp /tmp/linux-4.8.0/netfilter_icmp# 
 ```
 
-we see `netfilter_icmp.c` [here](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/blob/master/net/netfilter_icmp/netfilter_icmp.c) when you buil and install this kernel you are unabel to connect to `ping google.com`, with this code able to drop icmp packet on RING 0,
+we see `netfilter_icmp.c` [here](https://github.com/raminfp/linux-4.8.0-netfilter_icmp/blob/master/net/netfilter_icmp/netfilter_icmp.c) when you build and install this kernel you are unable to connect to `ping google.com`, with this code able to drop icmp packet on RING 0,
 
-we see `Kconfig` file for configuration `menuconfig`,i see on `make menuconfig` config on image,and define `Makefile` for compile object,
+we see `Kconfig` file for configuration `menuconfig` and define `Makefile` for compile object,
 
-back to `net` directory, 
+- back to `net` directory,
+ 
 ```
 root@raminfp /tmp/linux-4.8.0/net# pwd
 /tmp/linux-4.8.0/net
@@ -89,7 +90,7 @@ netfilter_icmp.h
 
 it's done,now we should define this function name from file header netfilter_icmp on main.c file linux,
 
-go to :
+Go to :
 
 ```
 root@raminfp /tmp/linux-4.8.0# cd init/
